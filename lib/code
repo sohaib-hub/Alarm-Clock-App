@@ -1,0 +1,54 @@
+  Center(
+                child: Column(
+                  children: <Widget>[
+
+                    Container(
+                      margin: const EdgeInsets.all(25),
+                      child: InkWell(
+                        child: const Text('Set Alarm'),
+                        onTap: () {
+                          int hour;
+                          int min;
+                          FlutterAlarmClock.createAlarm(hour:hour= int.parse(hourcontroller.text),
+                            minutes: min=int.parse(mincontroller.text),
+                            title: alarmtitle.text.toString() ,
+
+                          );
+                        },
+                      ),
+                    ),
+                    Container(
+                      margin: const EdgeInsets.all(25),
+                      child: const TextButton(
+                        onPressed: FlutterAlarmClock.showAlarms,
+                        child: Text(
+                          'Show alarms',
+                          style: TextStyle(fontSize: 20),
+                        ),
+                      ),
+                    ),
+                    Container(
+                      margin: const EdgeInsets.all(25),
+                      child: TextButton(
+                        child: const Text(
+                          'Create timer for 42 seconds',
+                          style: TextStyle(fontSize: 20),
+                        ),
+                        onPressed: () {
+                          FlutterAlarmClock.createTimer(length: 42);
+                        },
+                      ),
+                    ),
+                    Container(
+                      margin: const EdgeInsets.all(25),
+                      child: const TextButton(
+                        onPressed: FlutterAlarmClock.showTimers,
+                        child: Text(
+                          'Show Timers',
+                          style: TextStyle(fontSize: 20),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),

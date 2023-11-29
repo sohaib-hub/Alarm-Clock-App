@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1028134512601",
+    "project_id": "alarm-app-d07cf",
+    "storage_bucket": "alarm-app-d07cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028134512601:android:da95334f9f52f1a89c9bc8",
+        "android_client_info": {
+          "package_name": "com.sohaib.alarm_clock_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIyCWMIMwRCKwPei0LYjdCN1X9UT0DaFI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
